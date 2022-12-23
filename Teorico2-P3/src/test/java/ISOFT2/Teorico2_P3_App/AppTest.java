@@ -9,6 +9,7 @@ import ISOFT2.Teorico2_P3.Methods;
 
 public class AppTest {
 	Clases clases = new Clases();
+	@Test
 	public void TestP1() {
 	    int edad = -1;
 	    boolean trabajando = true;
@@ -59,7 +60,7 @@ public class AppTest {
 	    boolean trabajando = true;
 	    boolean casaPadres = true;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Cuenta Ahorra ahora que puedes";
+	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -167,7 +168,7 @@ public class AppTest {
 	    boolean trabajando = true;
 	    boolean casaPadres = false;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Cuenta Saltando del nido";
+	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -230,7 +231,7 @@ public class AppTest {
 	    boolean trabajando = false;
 	    boolean casaPadres = true;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
+	    String result = "Cuenta Confort";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -239,7 +240,7 @@ public class AppTest {
 	    boolean trabajando = false;
 	    boolean casaPadres = true;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
+	    String result = "Cuenta Confort";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -275,7 +276,7 @@ public class AppTest {
 	    boolean trabajando = false;
 	    boolean casaPadres = true;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
+	    String result = "Cuenta Confort";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -338,7 +339,7 @@ public class AppTest {
 	    boolean trabajando = false;
 	    boolean casaPadres = false;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
+	    String result = "Cuenta Vamos que tu puedes";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
@@ -347,7 +348,7 @@ public class AppTest {
 	    boolean trabajando = false;
 	    boolean casaPadres = false;
 	    Clases.Cliente cliente = clases.new Cliente(edad, casaPadres, trabajando);
-	    String result = "Esta informacion no corresponde a ningún tipo de cuenta";
+	    String result = "Cuenta Vamos que tu puedes";
 	    assertEquals(result, Methods.posiblesCuentas(cliente));
 	}
 	@Test
