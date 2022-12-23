@@ -19,9 +19,6 @@ public class Clases {
                 System.out.println(iae.getMessage());
             }
         }
-        public String getNombre(){
-            return nombre;
-        }
         public int getEdad(){
             return edad;
         }
@@ -30,18 +27,6 @@ public class Clases {
         }
         public boolean getCasaPadres(){
             return casaPadres;
-        }
-        public void setNombre(String nombreNew){
-            nombre = nombreNew;
-        }
-        public void setEdad(int edadNew){
-            edad = edadNew;
-        }
-        public void setTrabajando(boolean trabajandoNew){
-            trabajando = trabajandoNew;
-        }
-        public void setCasaPadres(boolean casaPadresNew){
-            casaPadres = casaPadresNew;
         }
     }
 
