@@ -6,8 +6,7 @@ public class Clases {
         int edad;
         boolean casaPadres;
         boolean trabajando;
-        public Cliente(String nombre, int edad, boolean casaPadres, boolean trabajando){
-            this.nombre = nombre;
+        public Cliente(int edad, boolean casaPadres, boolean trabajando){
             this.trabajando = trabajando;
             this.casaPadres = casaPadres;
             try {
@@ -30,7 +29,7 @@ public class Clases {
         }
     }
 
-    public class InvalidAgeException extends Exception{
+    public static class InvalidAgeException extends Exception{
 		private static final long serialVersionUID = 1L;
 		public InvalidAgeException(String msg){
             super(msg);
